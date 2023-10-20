@@ -21,6 +21,8 @@ The data used for this project was obtained from two primary sources:
 
 1. **USA Real Estate Data**: We sourced this dataset from Kaggle, which includes information about properties such as bedroom count, bathroom count, acreage, city, state, zip code, house size, previous sale date, and price. To maintain the focus on the East Coast, we filtered the dataset to include only East Coast properties.
 
+https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset/data
+ 
 # The Model
 
 ![Machine Learning Model](images/61fbec562cf81f62a255f192_61eeb99a54a67e18ce19d47c_0_nyBFE8lLgr8ePAJ_%20(1).jpeg)
