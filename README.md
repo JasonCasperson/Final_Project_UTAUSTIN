@@ -2,9 +2,9 @@
 
 ![Real Estate Market](images/prices-1536x879.jpg)
 
-The real estate market has experienced significant fluctuations between 2021 and 2023. To gain insights into the influence of external factors on home prices, we have conducted an analysis focused on U.S. housing prices and local weather patterns. This analysis aims to identify potential correlations between housing prices and various features, providing a valuable tool for homebuyers, sellers, and real estate professionals, particularly those interested in the East Coast market.
+The real estate market has experienced significant fluctuations between 2021 and 2023. To gain insights into the influence of external factors on home prices, we have conducted an analysis focused on U.S. housing prices on the east coast. This analysis aims to identify potential correlations between housing prices and various features, providing a valuable tool for homebuyers, sellers, and real estate professionals, particularly those interested in the East Coast market.
 
-Our approach involves leveraging data analysis and machine learning techniques, specifically Principal Component Analysis (PCA), K-Means Clustering, regression models, and later, Random Forest. It's important to note that due to the project's two-week timeframe, our analysis primarily focuses on weather factors within selected zip codes. Therefore, long-term accuracy may vary.
+Our approach involves leveraging data analysis and machine learning techniques, specifically Principal Component Analysis (PCA), K-Means Clustering, regression models, and later, Random Forest. It's important to note that due to the project's two-week timeframe, our analysis primarily focuses on selected zip codes. Therefore, long-term accuracy may vary.
 
 ## Tools and Technologies
 
@@ -20,8 +20,6 @@ Our approach involves leveraging data analysis and machine learning techniques, 
 The data used for this project was obtained from two primary sources:
 
 1. **USA Real Estate Data**: We sourced this dataset from Kaggle, which includes information about properties such as bedroom count, bathroom count, acreage, city, state, zip code, house size, previous sale date, and price. To maintain the focus on the East Coast, we filtered the dataset to include only East Coast properties.
-
-2. **Open Weather API**: We used the Open Weather API to collect weather-related data, including temperature, humidity, and precipitation. To ensure data accuracy, we associated zip codes from the filtered real estate dataset with the Open Weather API data.
 
 # The Model
 
@@ -53,6 +51,7 @@ The initial model had some limitations:
 - It lacked an initial correlation check to account for outliers or essential correlations.
 - It did not directly access data from the SQL database.
 - Initially, Random Forest was not emphasized in the analysis.
+- we also tried it with open weather api data but was turned to only real estate data
 
 # Conclusion
 
@@ -60,10 +59,10 @@ The initial model had some limitations:
 
 After training and running the data through the model, several conclusions and biases came to light:
 
-- The most prominent features with high correlation to housing prices were house size, zip code, acreage, and the number of bedrooms. Notably, weather-related factors exhibited little to no direct correlation with housing prices.
+- The most prominent features with high correlation to housing prices were house size, zip code, acreage, and the number of bedrooms. Notably, all very common sense conclusions.
 
 - An observable bias was the overrepresentation of addresses from New York, which skewed the analysis results. This bias can be attributed to the concentration of New York data in the dataset.
 
-- A limitation of our analysis was the relatively limited feature set from the Open Weather API. To conduct more in-depth analysis, further iterations of the model should expand the range of features incorporated.
+- A limitation of our analysis was the relatively limited feature set . To conduct more in-depth analysis, further iterations of the model should expand the range of features incorporated.
 
-In conclusion, while our analysis offers valuable insights into factors affecting housing prices, it's essential to consider the inherent biases and data limitations. Further research and analysis can provide a more comprehensive understanding of housing price dynamics in the East Coast real estate market.
+In conclusion, while our analysis offers valuable insights into factors affecting housing prices with high accuracy of correlation, it's essential to consider the inherent biases and data limitations such as the time and scope of the project. Further research and analysis with more provided features can provide a more comprehensive understanding of housing price dynamics in the East Coast real estate market.
